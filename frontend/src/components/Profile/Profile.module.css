@@ -1,0 +1,18 @@
+@keyframes success {
+    0%{display: block;}
+    100%{display: none;}
+}
+
+.successMessage{
+    display: none;
+    color: green;
+    animation-name: success;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.profileBtns{
+    display: flex;
+    justify-content: space-between;
+}
+

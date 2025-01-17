@@ -1,0 +1,33 @@
+
+
+
+.book_item{
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 300px;
+    transition: box-shadow .2s ease;
+}
+
+.book_item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.book_detail{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 60vw;
+    margin-top: 10px;
+}
+
+input[type='checkbox']{
+    margin-left: 5px;
+}
+
+
+.booksBtns{
+    display: flex;
+    justify-content: space-between;
+}

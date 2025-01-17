@@ -1,0 +1,48 @@
+@keyframes color_one {
+    0% {
+        background-color: aqua;
+        transform: scale(1);
+    }
+    50% {
+        background-color: rgb(0, 202, 202);
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: aqua;
+        transform: scale(1);
+    }
+}
+
+@keyframes color_two {
+    0% {background-color: rgb(0, 202, 202);}
+    50% {background-color: aqua;}
+    100% {background-color: rgb(0, 202, 202);}
+}
+
+.loader{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first, .second{
+    width: 10px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.first{
+    animation: color_one;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.second{
+    animation: color_two;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
